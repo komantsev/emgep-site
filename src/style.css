@@ -1,0 +1,148 @@
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary: #64748b;
+    --accent: #3b82f6;
+    --bg: #f8fafc;
+    --text: #1e293b;
+    --text-light: #475569;
+    --card-shadow: 0 10px 25px -5px rgba(0,0,0,0.08);
+    --border: #e2e8f0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.navbar {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary) !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-light) !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary) !important;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: var(--card-shadow);
+    border-radius: 12px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    padding: 2rem 0 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0 0 24px 24px;
+}
+
+h1, h2, h3 {
+    color: var(--text);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.content-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+}
+
+.table thead th {
+    background: var(--primary);
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+
+.table tbody tr {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.table tbody td {
+    border: none;
+    padding: 1rem;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 2rem;
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    margin: 2rem 0;
+}
+
+footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .content-card {
+        padding: 1.5rem;
+    }
+}
